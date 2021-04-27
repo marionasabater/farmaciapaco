@@ -12,40 +12,142 @@
 <body>
     <!----------- HEADER ----------------->
 <header>
-        <section id="header">
+    <section id="header">
         <!-- Zona de logo y menu -->
         <article class="menu">
-        <!-- Logotipo de la empresa -->
-        <img class="menu__logo"
-            src="./img/logo_instagram.svg"
-            alt="logotipo de instagram en color negro"/>
-
+        
         <!-- Navegador principal -->
         <nav class="menu__navegador">
         <a class="menu__navegador__inicio menu__navegador--activo">inicio</a>
-        <a class="menu__navegador__servicios" href="servicios.html">servicios</a>
-        <a class="menu__navegador__galeria" href="galeria.html">galeria</a>
+        <a class="menu__navegador__productos" href="productos.html">productos</a>
         <a class="menu__navegador__contactar" href="contactar.html">contactar</a>
         </nav>
-                </article>
-                <!-- Banner RETINA-DISPLAY -->
-                <picture>
-                    <!-- ESCRITORIO -->
-                    <!-- elegir imagen -->
-                    <source
-                        srcset="
-                            ./img/banner_inicio.jpg    1x,
-                            ./img/banner_inicio@2x.jpg 2x
-                        "
-                    />
-                    <!-- imagen con alt -->
-                    <img
-                        class="banner"
-                        src=""
-                        alt="banner de la empresa instagram"
-                    />
-                </picture>
-            </section>
-        </header>
+
+        <!-- Logotipo de la empresa -->
+        <img class="menu__logo"
+            src="./img/logo_farmacia paco.svg"
+            alt="logotipo de farmacia paco"/>
+        </article>
+
+        <!-- Banner triptico RETINA-DISPLAY -->
+        <article class="menu__banner_triptico">
+            <picture>
+            <source srcset="img/banner1.jpeg,
+            banner12x.jpeg,"/>
+            <img class="banner1"
+            src="img/banner1.jpeg" 
+            alt="banner de la farmacia paco"/>
+            </picture>
+
+            <picture>
+                <source srcset="img/banner2.jpeg,
+                banner22x.jpeg,"/>
+                <img class="banner2"
+                src="img/banner2.jpeg" 
+                alt="banner de la farmacia paco"/>
+            </picture>
+            
+            <picture>
+                <source srcset="img/banner3.jpeg,
+                banner32x.jpeg,"/>
+                <img class="banner3"
+                src="img/banner3.jpeg" 
+                alt="banner de la farmacia paco"/>
+            </picture>
+
+
+
+        </article>
+    </section>
+</header>
+<!------------- MAIN  ------------->
+<main>
+<section class=productos>
+
+    <article class="productos__texto">
+        <h2>PRODUCTOS que puedes encontrar en nuestra farmacia </h2>  
+    </article>
+
+    <article class="productos__galeria">
+     
+        <figure>
+            <img src="img/img_producto01.jpeg" alt="producto1">
+            <figcaption class="productos__galeria__titulo">PRODUCTO 01</figcaption>
+            <figcaption class="productos__galeria__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quo dolorem et!
+            </figcaption>
+          </figure>
+
+          <figure>
+          <img src="img/img_producto02.jpeg" alt="producto2">
+          <figcaption class="productos__galeria__titulo">PRODUCTO 02</figcaption>
+          <figcaption class="productos__galeria__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quo dolorem et!
+          </figcaption>
+        </figure>
+
+        <figure>
+            <img src="img/img_producto03.jpeg" alt="producto3">
+            <figcaption class="productos__galeria__titulo">PRODUCTO 03</figcaption>
+            <figcaption class="productos__galeria__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quo dolorem et!
+            </figcaption>
+          </figure>
+
+          <figure>
+          <img src="img/img_producto04.jpeg" alt="producto4">
+          <figcaption class="productos__galeria__titulo">PRODUCTO 04</figcaption>
+          <figcaption class="productos__galeria__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quo dolorem et!
+          </figcaption>
+        </figure>
+
+    </article>
+
+<section class="mapa">
+
+    <article class="mapa__texto">
+    <h2>¿Dónde nos puedes encontrar?</h2> 
+    </article>
+
+<article class="mapa__mapa">
+    <img src="img/mapa.jpg" alt="mapa">
+</article>
+
+    </section>
+
+
+</section>
+
+</main>
+
+
+<!------------- FOOTER ------------->
+<footer>
+    <section id="footer">
+        <!-- BEM -->
+        <section class="izquierda">
+            <!-- Redes Sociales -->
+            <ul class="izquierda__redesSociales">
+                <li
+                    class="izquierda__redesSociales__titulo tituloFooter"
+                >
+                    redes sociales
+                </li>
+                <li class="izquierda__redesSociales__instagram">
+                    <a href="http://www.instagram.com">instagram</a>
+                </li>
+                <li class="izquierda__redesSociales__twitter">
+                    <a href="http://www.twitter.com">twitter</a>
+                </li>
+                <li class="izquierda__redesSociales__pinterest">
+                    <a href="http://www.pinterest.com">pinterest</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="derecha">
+            <h6 class="derecha__copyright">
+                &copy;Copyright 2021 - Farmacia Paco
+            </h6>
+        </section>
+    </section>
+</footer>
 </body>
 </html>
