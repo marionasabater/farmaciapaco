@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacia PACO</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+    <!----------- HEADER ----------------->
+<header>
+        <section id="header">
+        <!-- Zona de logo y menu -->
+        <article class="menu">
+        <!-- Logotipo de la empresa -->
+        <img class="menu__logo"
+            src="./img/logo_instagram.svg"
+            alt="logotipo de instagram en color negro"/>
+
+        <!-- Navegador principal -->
+        <nav class="menu__navegador">
+        <a class="menu__navegador__inicio menu__navegador--activo">inicio</a>
+        <a class="menu__navegador__servicios" href="servicios.html">servicios</a>
+        <a class="menu__navegador__galeria" href="galeria.html">galeria</a>
+        <a class="menu__navegador__contactar" href="contactar.html">contactar</a>
+        </nav>
+                </article>
+                <!-- Banner RETINA-DISPLAY -->
+                <picture>
+                    <!-- ESCRITORIO -->
+                    <!-- elegir imagen -->
+                    <source
+                        srcset="
+                            ./img/banner_inicio.jpg    1x,
+                            ./img/banner_inicio@2x.jpg 2x
+                        "
+                    />
+                    <!-- imagen con alt -->
+                    <img
+                        class="banner"
+                        src=""
+                        alt="banner de la empresa instagram"
+                    />
+                </picture>
+            </section>
+        </header>
+</body>
+</html>

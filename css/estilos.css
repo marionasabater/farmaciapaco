@@ -1,0 +1,98 @@
+/* FUENTES NO STANDARD */
+@font-face {
+    font-family: 'sanspro_regular';
+    src: url(../fonts/sourcesanspro-regular-webfont.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'sanspro_negrita';
+    src: url(../fonts/sourcesanspro-black-webfont.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'sanspro_italica';
+    src: url(../fonts/sourcesanspro-lightit-webfont.woff2) format('woff2');
+}
+/* **************************************************************** */
+
+/* HTML */
+html {
+    font-size: 16px;
+    font-family: 'sanspro_regular', sans-serif;
+}
+
+body {
+    background-color: #e8f9ff;
+}
+/* @GLOBAL */
+header,main,footer{
+    display: flex;
+    justify-content: center;
+}
+#header,#main,#footer{
+    flex-basis: 1366px;
+    padding: 1rem;
+}
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.125rem;
+    text-transform: capitalize;
+    font-family: 'sanspro_italica', sans-serif;
+}
+/* @HEADER */
+header {
+
+}
+#header{
+
+}
+/* ARTICLE => Logo / Nav */
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+.menu__logo {
+}
+.menu__navegador{
+    flex-basis: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* @FOOTER */
+footer {
+    background-color: #647378;
+    color: white;
+}
+footer a{
+    color: white;
+    font-family: 'sanspro_italica', sans-serif;
+}
+#footer{
+    display: flex;
+}
+.izquierda {
+    flex-grow: 1;
+    display: flex;
+}
+.izquierda__redesSociales, .izquierda__legalidades {
+    list-style-type: none;
+    flex-basis: 50%;
+}
+.izquierda__redesSociales{
+    padding: 0;
+}
+footer ul li {
+    margin-bottom: 1rem;
+}
+.tituloFooter {
+    font-size: 1.125rem;
+    font-family: 'sanspro_negrita', sans-serif;
+}
+.derecha {
+    flex-grow: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
